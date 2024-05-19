@@ -125,7 +125,7 @@ html {
     }
 
     #home-photo {
-        border: 2px dotted red;
+/*         border: 2px dotted red; */
         display: flex;
         flex-direction: column;
         justify-content: center;
