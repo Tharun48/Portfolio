@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=M+PLUS+Rounded+1c&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/057772d77f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+    <!-- <script src="home.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title> Tharun's Portfolio</title>
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <div class="navigation">
+        <ul id="navigation-menu">
+            <li> <a class="active" href="#home">Home</a> </li>
+            <li> <a href="#about-me">About me</a> </li>
+            <li> <a href="#resume">Resume</a> </li>
+            <li> <a href="#experience">Experience</a> </li>
+            <li> <a href="#projects">Project</a></li>
+            <li> <a href="#skills">Skills</a> </li>
+            <li> <a href="#codingprofiles">CodingProfiles</a></li>
+            <li> <a href="#Contact">Contact</a> </li>
+            <li> <i class="fa-solid fa-xmark" onclick="closemenu()"></i> </li>
+        </ul>
+        <li> <i class="fa-solid fa-bars" onclick="openmenu()"></i> </li>
+    </div>
+
+
+    <!-- Home --> 
+
+
+    <div class="container">
+        <div id="home-photo">
+            <div id="home">
+                <h3> Hi There ! </h3>
+                <p id="intro"> I am Tharun <br> <span id="web-dev">Web Developer </span> </p>
+            </div>
+            <div id="image">
+                <img src="images/img1.jpg" alt="photo">
+            </div>
+        </div>
+    </div>
+
+
+    
+    
+
+
+    <!-- About -->
+
+    <div id="about-me">
+        <div class="container">
+            <h2>
+                About me
+            </h2>
+            <p>
+                I work at TCS as a software engineer, creating and improving services for products known as TCS
+                Bancs that empower people all across the world.I've been working in software engineering for about a year.
+                <br>In 2023, I received a Bachelor of Technology degree in Computer Science and Engineering from Sir MVIT,
+                Bangalore, where I studied the fundamentals of web development, programming, data structures, and
+                algorithms.
+                <br>In addition, I have a strong interest in programming and problem-solving.
+            </p>
+    
+            <!-- Resume -->
+            <div id="resume">
+                <h2> Resume </h2>
+                <a id="resume-el" href="Resume/Tharun_Resume.pdf" target="_blank">
+                    <p> Open Resume <i class="fa-regular fa-folder-open"></i> </p>
+                </a>
+            </div>
+    </div>
+
+
+
+
+        <!-- Experience -->
+      
+        <div class="container">
+            <div id="experience">
+                <h2> Experience</h2>
+                <p>
+                    Analysing the exsisting task operation to understand the impementation of GBP(Global Banking Product)
+                    which
+                    is developed as monolithic server.
+    
+                    <br>The process of moving Curent monolith server to microservices architecture includes understanding
+                    the
+                    functionalities of the monolith, defining the boundaries of microservices, and possibly reorganizing the
+                    database configuration. <br> Writing code, compiling, testing, and deploying procedures are among my
+                    responsibilities.
+    
+                    <br>Creation of unique microservices with clearly defined boundaries and RESTful interfaces. Endpoints
+                    are
+                    used to make REST APIs accessible.
+    
+                    <br>After the API is exposed, Unit Testing is carried out and documentation is created using the tool
+                    Swagger.
+    
+                    <br>This conversion from monolith architecture to microservices architecture increases the efficency by
+                    20%.
+    
+                </p>
+            </div>
+        </div>
+
+        
+
+        <!-- Project -->
+
+
+        <div class="container">
+            <div id="projects">
+                <h2> Projects </h2>
+                <p id="p1"> Anomalies Detection in Credit Card Transaction
+                </p> <br>
+                <p>
+                    Anomaly detection is a technique used to identify unusual patterns that do not conform to expected
+                    behavior.
+                    Fraudulent transactions may be identified using ML techniques such as random forest and logistic
+                    regression.
+                    The Model
+                    is initially trained with the dataset and then given an instance to determine whether it is fraudulent
+                    or
+                    real. Predictive
+                    models such as logistic regression, random forest, and XGBoost in combination with different resampling
+                    techniques have
+                    been applied to predict if a transaction is fraudulent or genuine.
+                </p>
+                <p id="p1"> Add to Cart <a href="https://add-item-to-cart-tharun.netlify.app/"> (Open) </a>
+                </p> <br>
+                <p>
+                    Developed web Application that is used to add items into cart. <br>
+                    Developed this appication using HTML, CSS and JavaScript.
+                </p>
+            </div>
+        </div>
+
+        
+
+        <!-- Skills -->
+
+        <div class="container">
+            <div id="skills">
+                <h2> Skills </h2><br />
+                <div class="row ">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">Java </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">HTML</div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">CSS</div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">Java Script</div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6"> SQL </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6"> DSA </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- CodingProfile -->
+
+        <div class="container">
+            <div id="codingprofiles">
+                <h2> CodingProfile </h2>
+                <div class="row codingprofiles">
+                    <div class="col-lg-3 col-sm-6 coding-links">
+                        <img src="images/leetcode.png" />
+                        <p><a href="https://leetcode.com/u/Tharun_Kumar_Reddy/" target="_blank">LeetCode</a></p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 coding-links">
+                        <img src="images/GFG.png" />
+                        <p><a href="https://www.geeksforgeeks.org/user/tharunreddyy48/" target="_blank">Geeks for Geeks</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 coding-links">
+                        <img src="images/codingninjas.png" />
+                        <p><a href="https://www.naukri.com/code360/profile/99b21b24-73b9-4471-ad6d-1252fc4a3532"
+                                target="_blank">Coding Ninjas</a></p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 coding-links">
+                        <img src="images/codeforces.jfif" />
+                        <p><a href="https://codeforces.com/profile/Tharun_Reddy_" target="_blank">CodeForces</a></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div id="Contact">
+                <h2> Contact </h2>
+                <div class="row">
+                    <div class="col-lg-3 social-links">
+                        <img src="https://img.icons8.com/color/48/null/gmail--v1.png" />
+                        <p><a href="mailto:tharunreddyy48@gmail.com">tharunreddyy48@gmail.com</a></p>
+                    </div>
+                    <div class="col-lg-3 social-links">
+                        <img src="images/linkedIn.png" width="40px" height="40px" />
+                        <a href="https://www.linkedin.com/in/tharun-reddy-91827b246/" target="_blank">
+                            <p>tharunreddy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 social-links">
+                        <img src="images/githu.png" width="40px" height="40px" />
+                        <a href="https://github.com/Tharun48?tab=repositories" target="_blank">
+                            <p>tharun48</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 social-links">
+                        <img src="images/insta.jfif" width="40px" height="40px" />
+                        <a href="https://github.com/Tharun48?tab=repositories" target="_blank">
+                            <p>tharun._reddy._</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+    <script>
+        let sidemenu = document.getElementById("navigation-menu")
+        const openmenu = () => {
+            sidemenu.style.right = "0px"
+            console.log("tharun")
+        }
+        const closemenu = () => {
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+
+
+</body>
+
+</html>
