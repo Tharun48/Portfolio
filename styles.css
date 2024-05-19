@@ -94,7 +94,7 @@ html {
         position: fixed;
         top: -18px;
         right: -200px;
-        width: 130px;
+        width: 170px;
         height: max-content;
         padding: 15px;
         z-index: 2;
@@ -125,7 +125,7 @@ html {
     }
 
     #home-photo {
-        border: 2px dotted red;
+        /* border: 2px dotted red; */
         display: flex;
         flex-direction: column;
         justify-content: center;
