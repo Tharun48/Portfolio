@@ -1,255 +1,266 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=M+PLUS+Rounded+1c&display=swap"
-        rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/057772d77f.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&display=swap"
-        rel="stylesheet">
-    <!-- <script src="home.js"></script> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <title> Tharun's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tharun | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.9);
+      backdrop-filter: blur(10px);
+      color: #f9fafb;
+      padding: 1rem 0;
+      text-align: center;
+      z-index: 1000;
+    }
+    nav a {
+      color: #93c5fd;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6rem 3rem 3rem; /* top padding to avoid overlap with nav */
+      min-height: 80vh;
+      background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+      color: #1f2937;
+    }
+    .hero-text {
+      flex: 1;
+    }
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+    }
+    .hero-text p {
+        font-size: 1.4rem;
+        margin: 0;
+        font-weight: bold;
+        height: 2rem;      /* fixed height */
+        display: flex;     /* keep alignment consistent */
+        align-items: center;
+    }
+    .typing {
+      border-right: 2px solid white;
+      display: inline-block;
+      padding-right: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .resume-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 12px 20px;
+      background: #2563eb;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .resume-btn:hover {
+      background: #1d4ed8;
+      transform: scale(1.05);
+    }
+    .hero img {
+      flex: 1;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      margin-left: 2rem;
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      color: #1d4ed8;
+    }
+    ul { padding-left: 20px; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #0f172a;
+      color: #f9fafb;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: #93c5fd;
+      margin: 0 8px;
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero img {
+        margin: 20px 0 0;
+        max-width: 80%;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <!-- NAV -->
+  <nav>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#achievements">Achievements</a>
+  </nav>
 
-    <!-- navigation -->
-    <div class="navigation">
-        <ul id="navigation-menu">
-            <li> <a class="active" href="#home">Home</a> </li>
-            <li> <a href="#about-me">About me</a> </li>
-            <li> <a href="#resume">Resume</a> </li>
-            <li> <a href="#experience">Experience</a> </li>
-            <li> <a href="#projects">Project</a></li>
-            <li> <a href="#skills">Skills</a> </li>
-            <li> <a href="#codingprofiles">CodingProfiles</a></li>
-            <li> <a href="#Contact">Contact</a> </li>
-            <li> <i class="fa-solid fa-xmark" onclick="closemenu()"></i> </li>
-        </ul>
-        <li> <i class="fa-solid fa-bars" onclick="openmenu()"></i> </li>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Tharun</h1>
+      <p class="typing" id="role"></p>
+      <a href="Resume/Resume.pdf" class="resume-btn" download>⬇️ Download Resume</a>
     </div>
+    <img src="D:/development/localRepo/Portfolio/images/img1.jpg" alt="Profile Image">
+  </section>
 
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>Sir M Visvesvaraya Institute of Technology, Bangalore</strong></p>
+    <p>Bachelor of Engineering in Computer Science (CGPA: 8.95)</p>
+    <p>Aug 2019 – May 2023</p>
+  </section>
 
-    <!-- Home --> 
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <h3>Tata Consultancy Services | Java, Spring Boot, SQL</h3>
+    <p><em>Jun 2023 – Present</em></p>
+    <ul>
+      <li>Analyzed and modularized the monolithic Global Banking Product (GBP), contributing to the design of a scalable microservices architecture.</li>
+      <li>Developed 3+ domain-specific microservices, optimized DB configurations, and integrated CI/CD pipelines using Jenkins.</li>
+      <li>Exposed 25+ REST APIs and documented them with Swagger; wrote 200+ unit tests to ensure reliability.</li>
+      <li>Achieved a 30% system performance boost by optimizing queries and reducing memory footprint.</li>
+    </ul>
+  </section>
 
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <h3>Expense-Tracker (Java, Spring Boot, AWS)</h3>
+    <p>Mar 2025 – May 2025</p>
+    <ul>
+      <li>Built a secure backend system for tracking and analyzing expenses using Spring Boot, deployed on AWS Elastic Beanstalk.</li>
+      <li>Implemented 10+ REST APIs with Swagger documentation and unit tests.</li>
+      <li>Integrated PostgreSQL with JPA/Hibernate and secured authentication with JWT and Spring Security.</li>
+    </ul>
 
-    <div class="container">
-        <div id="home-photo">
-            <div id="home">
-                <h3> Hi There ! </h3>
-                <p id="intro"> I am Tharun <br> <span id="web-dev">Web Developer </span> </p>
-            </div>
-            <div id="image">
-                <img src="images/img1.jpg" alt="photo">
-            </div>
-        </div>
-    </div>
+    <h3>Finaxis – Financial Microservices Platform (Spring Boot, Kafka, PostgreSQL)</h3>
+    <p>Nov 2024 – Jan 2025</p>
+    <ul>
+      <li>Developed a microservices-based financial platform to manage customer accounts and card data.</li>
+      <li>Enabled async communication between services using Apache Kafka and Spring Cloud Stream.</li>
+      <li>Configured producers/consumers for dynamic routing and topic binding; integrated PostgreSQL with JPA.</li>
+    </ul>
+  </section>
 
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <p><strong>Languages:</strong> Java, SQL, HTML, CSS, JavaScript</p>
+    <p><strong>Developer Tools:</strong> IntelliJ, Eclipse, Visual Studio, Android Studio</p>
+  </section>
 
-    
-    
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>LeetCode Rating: 1845</li>
+      <li>Top 100 ranks in multiple GeeksforGeeks weekly contests (71, 75, 77).</li>
+      <li>Ranked 956/30K+ in LeetCode Weekly Contest 456.</li>
+      <li>Global Rank 342 in CodeChef Starters 172.</li>
+    </ul>
+  </section>
 
+  <!-- FOOTER -->
+  <footer>
+    <p>Connect with me:</p>
+    <a href="https://linkedin.com/in/tharun48" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/Tharun48" target="_blank">GitHub</a> |
+    <a href="https://leetcode.com/Tharun_Kumar_Reddy/" target="_blank">LeetCode</a> |
+    <a href="https://auth.geeksforgeeks.org/user/tharunreddyy48/practice" target="_blank">GeeksforGeeks</a> |
+    <a href="https://www.codechef.com/users/tharunreddy48" target="_blank">CodeChef</a>
+  </footer>
 
-    <!-- About -->
+  <script>
+    // Typing effect for roles
+    const roles = ["Full Stack Developer", "Java Backend Developer", "Problem Solver"];
+    let i = 0, j = 0;
+    let currentRole = "";
+    let isDeleting = false;
+    const speed = 120;
+    const roleElement = document.getElementById("role");
 
-    <div id="about-me">
-        <div class="container">
-            <h2>
-                About me
-            </h2>
-            <p>
-                I work at TCS as a software engineer, creating and improving services for products known as TCS
-                Bancs that empower people all across the world.I've been working in software engineering for about a year.
-                <br>In 2023, I received a Bachelor of Technology degree in Computer Science and Engineering from Sir MVIT,
-                Bangalore, where I studied the fundamentals of web development, programming, data structures, and
-                algorithms.
-                <br>In addition, I have a strong interest in programming and problem-solving.
-            </p>
-    
-            <!-- Resume -->
-            <div id="resume">
-                <h2> Resume </h2>
-                <a id="resume-el" href="Resume/Tharun_Resume.pdf" target="_blank">
-                    <p> Open Resume <i class="fa-regular fa-folder-open"></i> </p>
-                </a>
-            </div>
-    </div>
-
-
-
-
-        <!-- Experience -->
-      
-        <div class="container">
-            <div id="experience">
-                <h2> Experience</h2>
-                <p>
-                    Analysing the exsisting task operation to understand the impementation of GBP(Global Banking Product)
-                    which
-                    is developed as monolithic server.
-    
-                    <br>The process of moving Curent monolith server to microservices architecture includes understanding
-                    the
-                    functionalities of the monolith, defining the boundaries of microservices, and possibly reorganizing the
-                    database configuration. <br> Writing code, compiling, testing, and deploying procedures are among my
-                    responsibilities.
-    
-                    <br>Creation of unique microservices with clearly defined boundaries and RESTful interfaces. Endpoints
-                    are
-                    used to make REST APIs accessible.
-    
-                    <br>After the API is exposed, Unit Testing is carried out and documentation is created using the tool
-                    Swagger.
-    
-                    <br>This conversion from monolith architecture to microservices architecture increases the efficency by
-                    20%.
-    
-                </p>
-            </div>
-        </div>
-
-        
-
-        <!-- Project -->
-
-
-        <div class="container">
-            <div id="projects">
-                <h2> Projects </h2>
-                <p id="p1"> Anomalies Detection in Credit Card Transaction
-                </p> <br>
-                <p>
-                    Anomaly detection is a technique used to identify unusual patterns that do not conform to expected
-                    behavior.
-                    Fraudulent transactions may be identified using ML techniques such as random forest and logistic
-                    regression.
-                    The Model
-                    is initially trained with the dataset and then given an instance to determine whether it is fraudulent
-                    or
-                    real. Predictive
-                    models such as logistic regression, random forest, and XGBoost in combination with different resampling
-                    techniques have
-                    been applied to predict if a transaction is fraudulent or genuine.
-                </p>
-                <p id="p1"> Add to Cart <a href="https://add-item-to-cart-tharun.netlify.app/"> (Open) </a>
-                </p> <br>
-                <p>
-                    Developed web Application that is used to add items into cart. <br>
-                    Developed this appication using HTML, CSS and JavaScript.
-                </p>
-            </div>
-        </div>
-
-        
-
-        <!-- Skills -->
-
-        <div class="container">
-            <div id="skills">
-                <h2> Skills </h2><br />
-                <div class="row ">
-                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">Java </div>
-                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">HTML</div>
-                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">CSS</div>
-                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">Java Script</div>
-                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6"> SQL </div>
-                    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6"> DSA </div>
-                </div>
-            </div>
-        </div>
-
-        
-
-        <!-- CodingProfile -->
-
-        <div class="container">
-            <div id="codingprofiles">
-                <h2> CodingProfile </h2>
-                <div class="row codingprofiles">
-                    <div class="col-lg-3 col-sm-6 coding-links">
-                        <img src="images/leetcode.png" />
-                        <p><a href="https://leetcode.com/u/Tharun_Kumar_Reddy/" target="_blank">LeetCode</a></p>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 coding-links">
-                        <img src="images/GFG.png" />
-                        <p><a href="https://www.geeksforgeeks.org/user/tharunreddyy48/" target="_blank">Geeks for Geeks</a>
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 coding-links">
-                        <img src="images/codingninjas.png" />
-                        <p><a href="https://www.naukri.com/code360/profile/99b21b24-73b9-4471-ad6d-1252fc4a3532"
-                                target="_blank">Coding Ninjas</a></p>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 coding-links">
-                        <img src="images/codeforces.jfif" />
-                        <p><a href="https://codeforces.com/profile/Tharun_Reddy_" target="_blank">CodeForces</a></p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="container">
-            <div id="Contact">
-                <h2> Contact </h2>
-                <div class="row">
-                    <div class="col-lg-3 social-links">
-                        <img src="https://img.icons8.com/color/48/null/gmail--v1.png" />
-                        <p><a href="mailto:tharunreddyy48@gmail.com">tharunreddyy48@gmail.com</a></p>
-                    </div>
-                    <div class="col-lg-3 social-links">
-                        <img src="images/linkedIn.png" width="40px" height="40px" />
-                        <a href="https://www.linkedin.com/in/tharun-reddy-91827b246/" target="_blank">
-                            <p>tharunreddy</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 social-links">
-                        <img src="images/githu.png" width="40px" height="40px" />
-                        <a href="https://github.com/Tharun48?tab=repositories" target="_blank">
-                            <p>tharun48</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 social-links">
-                        <img src="images/insta.jfif" width="40px" height="40px" />
-                        <a href="https://github.com/Tharun48?tab=repositories" target="_blank">
-                            <p>tharun._reddy._</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-
-
-    <script>
-        let sidemenu = document.getElementById("navigation-menu")
-        const openmenu = () => {
-            sidemenu.style.right = "0px"
-            console.log("tharun")
+    function typeEffect() {
+      currentRole = roles[i];
+      if (!isDeleting) {
+        roleElement.textContent = currentRole.substring(0, j+1);
+        j++;
+        if (j === currentRole.length) {
+          isDeleting = true;
+          setTimeout(typeEffect, 1000);
+          return;
         }
-        const closemenu = () => {
-            sidemenu.style.right = "-200px"
+      } else {
+        roleElement.textContent = currentRole.substring(0, j-1);
+        j--;
+        if (j === 0) {
+          isDeleting = false;
+          i = (i+1) % roles.length;
         }
-    </script>
+      }
+      setTimeout(typeEffect, isDeleting ? speed/2 : speed);
+    }
+    typeEffect();
 
-
-
+    // Smooth scrolling for nav
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href"))
+          .scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
 </body>
-
 </html>
