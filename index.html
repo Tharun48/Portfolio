@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="main">
+        <div id="profile">
+            <div id="image">
+                <div id="pic">
+
+                </div>
+                <div id="details">
+                    Tharun
+                </div>
+            </div>
+
+            <div id="contact">
+                <div class="social" id="mobile">
+                    &#128386;
+                    tharunreddyy48@gmail.com
+                </div>
+                <div class="social" id="email">
+                    &#128379;
+                    +91 7036481847
+                </div>
+                <div class="social" id="linkedIn">
+                    <a href="https://www.linkedin.com/in/tharun48/" target="_blank"><i class="fa fa-linkedin-square"></i></a> 
+                    linkedin.com/in/tharun48
+                </div>
+                <div class="social" id="github">
+                    <a href="https://github.com/Tharun48" target="_blank"><i class="fa fa-github"></i></a> 
+                    github.com/tharun48
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="content">
+            <div id="nav-bar">
+            <a  onclick="show('about')" >About</a>
+            <a  onclick="show('project')" >Projects</a>
+            <a onclick="show('experience')">Experience</a>
+            <a  onclick="show('contact-me')" >Contact me</a>
+            </div>
+
+            <div class="section active heading" id="about">
+                <h3>About</h3>
+               <p>
+                I am a passionate backend developer with 2 years of experience specializing in Java and Spring Boot. I am capable of solving complex problems, and delivering high-quality code. <br> <br>I thrive in problem-solving environments, enjoy optimizing performance, and continuously learning modern technologies to enhance my craft. With a keen eye for detail and a focus on clean, maintainable solutions, I am eager to solve complex problems that brings the change in the real world.
+               </p>
+
+               <a href="https://drive.google.com/file/d/1rIJez_jVCVE8MmNXf-NEiHShh2sAEVSQ/view?usp=sharing" target="_blank">
+                    <button class="btn">
+                        <i class="fa fa-download"></i>
+                        Resume
+                    </button>
+                </a>
+            </div>
+
+            <div class="section" id="resume">
+                <h3>Resume</h3>
+               <p>This is my resume</p>
+            </div>
+
+            <div class="section heading" id="experience">
+                <h3>Experience</h3>
+                <ul>
+                    <h3 style="color: rgb(103, 66, 189); display: inline;" >Global Banking Product</h3>
+                    <p style="display: inline; font-size: 17px;">(SpringBoot, Java)</p>
+                    <p>
+                        <ul>
+                            <li>Developed 3+ domain-specific microservices to improve modularity and scalability, optimized DB
+ configurations for performance, and integrated CI/CD pipelines using Jenkins for seamless deployment.
+                            </li>
+                            <li>
+                                Exposed 25+ REST APIs and documented them using Swagger; wrote 200+ unit tests to ensure code
+ reliability.
+                            </li>
+                            <li>
+                               Achieved a 30% system performance boost by optimizing queries and reducing memory footprint.
+                            </li>
+                        </ul>
+                    </p>
+                </ul>
+            </div>
+
+
+            <div class="section heading" id="project">
+                <h3>Projects</h3>
+                <ul>
+                    <h3 style="color: rgb(103, 66, 189);">Expense-Tracker (<a style="color: rgb(164, 164, 179);" "http://expense-tracker-env-1.eba-b2mhpunf.eu-north-1.elasticbeanstalk.com/swagger-ui/index.html" target="_blank">live</a>)</h3>
+                    <p>
+                        <ul>
+                            <li>Built a secure and scalable backend system to track and analyze users’ monthly expenses using Spring
+Boot, deployed on AWS Elastic Beanstalk.
+                            </li>
+                            <li>
+                                Integrated PostgreSQL database with JPA/Hibernate, ensuring efficient persistence of user and
+transaction data.
+                            </li>
+                            <li>
+                                Secured the application using Spring Security with Bcrypt password hashing and JWT-based token
+authentication
+                            </li>
+                        </ul>
+                    </p>
+                </ul>
+            </div>
+
+            <div class="section heading" id="contact-me">
+                <h3>Contact me</h3>
+                <div id="contactdiv">
+                    <input id="name" type="textarea" placeholder="Name">
+                    <input id="email" type="textarea" placeholder="Email">
+                </div>
+
+                <div class="messagediv">
+                    <form action="">
+                        <input id="message" type="textarea" placeholder="Type your message">
+                    </form>
+                </div>
+               
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function show(id){
+            var section = document.getElementsByClassName("section");
+            for(var i=0;i<section.length;i++){
+                section[i].classList.remove('active');
+            }
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
