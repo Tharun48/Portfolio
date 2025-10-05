@@ -8,6 +8,7 @@
     background-color: rgba(41, 35, 35, 0.897);
 }
 
+
 #content{
     background-color: rgba(41, 35, 35, 0.897);
     width: 800px;
@@ -40,8 +41,8 @@
 }
 
 .social{
-    height: 80px;
-    width: 250px;
+    height: 50px;
+    width: 300px;
     /* border: 1px dashed green; */
     display: flex;
     flex-direction: row;
@@ -70,15 +71,16 @@ a{
     color: white;
 }
 
-#nav-bar{
+#nav_bar{
     margin-top: 10px;
+    margin-left: 150px;
     display:flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-around;
     font-size: 24px;
 }
 
-#nav-bar :hover{
+#nav_bar :hover{
     text-decoration: underline;
     color: blue;
 }
@@ -148,21 +150,25 @@ li{
 #contactdiv{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #name,#email{
+    margin-top: 20px;
     height: 35px;
     width: 300px;
 }
 
-#messagediv{
+.messagediv{
+    display: flex;
+    flex-direction: row;
     margin-top: 20px;
+    justify-content: center;
 }
 
 #message{
     margin-top: 20px;
-    height: 100px;
+    height: 70px;
     width: 600px;
 }
 
@@ -174,4 +180,73 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+
+#resume_button{
+    margin-top: 10px;
+    display: block;
+}
+
+.tag{
+    color: rgb(103, 66, 189);
+}
+
+#expensetag{
+    color: rgb(103, 66, 189);
+}
+
+.achievement_li{
+    margin-top: 10px;
+}
+
+#coding_profile_link{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+img{
+    height: 60px;
+    width: 60px;
+}
+
+#coding_profile_link :hover{
+    height: 70px;
+    width: 70px;
+    transition-timing-function: ease-out;
+}
+
+#skills{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#skills img{
+    height: 100px;
+    width: 100px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.education_details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+#education{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }

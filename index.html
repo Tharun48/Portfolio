@@ -20,11 +20,11 @@
             </div>
 
             <div id="contact">
-                <div class="social" id="mobile">
+                <div class="social" id="email">
                     &#128386;
                     tharunreddyy48@gmail.com
                 </div>
-                <div class="social" id="email">
+                <div class="social" id="mobile">
                     &#128379;
                     +91 7036481847
                 </div>
@@ -42,20 +42,29 @@
         </div>
 
         <div id="content">
-            <div id="nav-bar">
+            <div id="nav_bar">
             <a  onclick="show('about')" >About</a>
-            <a  onclick="show('project')" >Projects</a>
-            <a onclick="show('experience')">Experience</a>
+            <a onclick="show('resume')">Resume</a>
+            <a onclick="show('achievements')">Achievements</a>
             <a  onclick="show('contact-me')" >Contact me</a>
             </div>
 
             <div class="section active heading" id="about">
                 <h3>About</h3>
                <p>
-                I am a passionate backend developer with 2 years of experience specializing in Java and Spring Boot. I am capable of solving complex problems, and delivering high-quality code. <br> <br>I thrive in problem-solving environments, enjoy optimizing performance, and continuously learning modern technologies to enhance my craft. With a keen eye for detail and a focus on clean, maintainable solutions, I am eager to solve complex problems that brings the change in the real world.
+               I am Tharun, a Software developer passionate about problem solving and building things which makes the changes in the real world. I enjoy exploring the innovative algorithms, which makes our tasks easy in our day-to-day life.
+                <br> <br>
+                Overtime I developed my skills by solving numerous DSA problems across various coding platforms and contributing to open-source communities.
                </p>
-
-               <a href="https://drive.google.com/file/d/1rIJez_jVCVE8MmNXf-NEiHShh2sAEVSQ/view?usp=sharing" target="_blank">
+               <h3>Skills</h3>
+               <div id="skills">
+                    <img src="images/java.png" alt="">
+                    <img src="images/html.png" alt="">
+                    <img src="images/css.png" alt="">
+                    <img src="images/postgres.png" alt="">
+                    <img src="images/spring.jpg" alt="">
+               </div>
+               <a id="resume_button" href="https://drive.google.com/file/d/1rIJez_jVCVE8MmNXf-NEiHShh2sAEVSQ/view?usp=sharing" target="_blank">
                     <button class="btn">
                         <i class="fa fa-download"></i>
                         Resume
@@ -63,16 +72,13 @@
                 </a>
             </div>
 
-            <div class="section" id="resume">
-                <h3>Resume</h3>
-               <p>This is my resume</p>
-            </div>
-
-            <div class="section heading" id="experience">
+            <div class="section heading" id="resume">
                 <h3>Experience</h3>
                 <ul>
-                    <h3 style="color: rgb(103, 66, 189); display: inline;" >Global Banking Product</h3>
-                    <p style="display: inline; font-size: 17px;">(SpringBoot, Java)</p>
+                    <div class="title">
+                        <h3 style="color: rgb(103, 66, 189); display: inline;" >Global Banking Product</h3>
+                        <p>Jun 2023 - present</p>
+                    </div>
                     <p>
                         <ul>
                             <li>Developed 3+ domain-specific microservices to improve modularity and scalability, optimized DB
@@ -88,13 +94,10 @@
                         </ul>
                     </p>
                 </ul>
-            </div>
-
-
-            <div class="section heading" id="project">
-                <h3>Projects</h3>
+                <h3>Project</h3>
                 <ul>
-                    <h3 style="color: rgb(103, 66, 189);">Expense-Tracker (<a style="color: rgb(164, 164, 179);" "http://expense-tracker-env-1.eba-b2mhpunf.eu-north-1.elasticbeanstalk.com/swagger-ui/index.html" target="_blank">live</a>)</h3>
+                    <h3 class="tag"> <a id="expensetag" href="http://expense-tracker-env-1.eba-b2mhpunf.eu-north-1.elasticbeanstalk.com/swagger-ui/index.html" target="_blank">Expense-Tracker</a>  </h3>
+                    <!-- <h3 class="tag">Expense-Tracker (<a style="color: rgb(164, 164, 179);" "http://expense-tracker-env-1.eba-b2mhpunf.eu-north-1.elasticbeanstalk.com/swagger-ui/index.html" target="_blank">live</a>)</h3> -->
                     <p>
                         <ul>
                             <li>Built a secure and scalable backend system to track and analyze users’ monthly expenses using Spring
@@ -111,6 +114,92 @@ authentication
                         </ul>
                     </p>
                 </ul>
+                <ul>
+                    <h3 class="tag">Finaxis</h3>
+                    <p>
+                        <ul>
+                            <li>Built a financial platform using microservices to manage customer accounts and card data with a
+ modular, scalable architecture.</li>
+                            <li>Enabled asynchronous communication between services (e.g., account → card) using Apache Kafka
+ and Spring Cloud Stream.</li>
+                            <li>Configured Kafka producers and consumers via YAML for dynamic routing and topic binding; established a
+ message-driven architecture with isolated consumer groups and multi-topic support.</li>
+                            <li>Integrated PostgreSQL for data persistence and set up Spring JPA for seamless object-relational
+ mapping.</li>
+                        </ul>
+                    </p>
+                </ul>
+                <div id="education">
+                    <h3>Education</h3>
+                    <div class="education_details">
+                        <p>Sir M Visvesvaraya Institute of Technology</p>
+                        <p>2019-2023</p>
+                    </div>
+                    <div class="education_details">
+                        <p>Bachelor of Engineering in Computer Science</p>
+                        <p>8.96 CGPA</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section heading" id="project">
+                <h3>Projects</h3>
+                <ul>
+                    <h3 class="tag"> <a id="expensetag" href="http://expense-tracker-env-1.eba-b2mhpunf.eu-north-1.elasticbeanstalk.com/swagger-ui/index.html" target="_blank">Expense-Tracker</a>  </h3>
+                    <!-- <h3 class="tag">Expense-Tracker (<a style="color: rgb(164, 164, 179);" "http://expense-tracker-env-1.eba-b2mhpunf.eu-north-1.elasticbeanstalk.com/swagger-ui/index.html" target="_blank">live</a>)</h3> -->
+                    <p>
+                        <ul>
+                            <li>Built a secure and scalable backend system to track and analyze users’ monthly expenses using Spring
+Boot, deployed on AWS Elastic Beanstalk.
+                            </li>
+                            <li>
+                                Integrated PostgreSQL database with JPA/Hibernate, ensuring efficient persistence of user and
+transaction data.
+                            </li>
+                            <li>
+                                Secured the application using Spring Security with Bcrypt password hashing and JWT-based token
+authentication
+                            </li>
+                        </ul>
+                    </p>
+                </ul>
+                <ul>
+                    <h3 class="tag">Finaxis</h3>
+                    <p>
+                        <ul>
+                            <li>Built a financial platform using microservices to manage customer accounts and card data with a
+ modular, scalable architecture.</li>
+                            <li>Enabled asynchronous communication between services (e.g., account → card) using Apache Kafka
+ and Spring Cloud Stream.</li>
+                            <li>Configured Kafka producers and consumers via YAML for dynamic routing and topic binding; established a
+ message-driven architecture with isolated consumer groups and multi-topic support.</li>
+                            <li>Integrated PostgreSQL for data persistence and set up Spring JPA for seamless object-relational
+ mapping.</li>
+                        </ul>
+                    </p>
+                </ul>
+            </div>
+
+             <div class="section heading" id="achievements">
+                <div id="achievement_summary">
+                    <h3>Achievements</h3>
+                    <ul>
+                        <li class="achievement_li">Achieved the Knight badge on LeetCode with a max rating of 1937, ranking among the top 3% of coders</li>
+                        <li class="achievement_li">Ranked 956 out of 30K participants in Leetcode Weekly Contest 456</li>
+                        <li class="achievement_li">Achieved a Global Rank of 342 in Codeforces Starter 172.</li>
+                        <li class="achievement_li">Ranked 71, 75 and 77 in GeeksforGeeks weekly contest</li>
+                        <li class="achievement_li">Pupil at Codeforces (max-rating:1207)</li>
+                        <li class="achievement_li">3* at Codechef (max-rating:1606)</li>
+                    </ul>
+                </div>
+                <h3>Coding Profile Links</h3>
+                <div id="coding_profile_link">
+                    <a href="https://leetcode.com/u/Tharun_Kumar_Reddy/" target="_blank">           <img src="/images/leetcode.png" alt=""></a>
+                    <a href="https://codeforces.com/profile/Tharun_Reddy_" target="_blank">         <img src="/images/codeforces" alt=""></a>
+                    <a href="https://www.codechef.com/users/tharunreddy48" target="_blank">         <img src="/images/codechef.jpg" alt=""></a>
+                    <a href="https://www.geeksforgeeks.org/user/tharunreddyy48/" target="_blank">   <img src="/images/gfg.png" alt=""></a>
+                </div>
             </div>
 
             <div class="section heading" id="contact-me">
