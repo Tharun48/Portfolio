@@ -1,5 +1,5 @@
 #profile{
-    width: 300px;
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,10 +8,13 @@
     background-color: rgba(41, 35, 35, 0.897);
 }
 
+p{
+    font-size: 23px;
+}
 
 #content{
     background-color: rgba(41, 35, 35, 0.897);
-    width: 800px;
+    width: 70%;
     border-radius: 5%;
 }
 
@@ -22,12 +25,13 @@
 }
 
 
+
 #pic{
     height: 300px;
-    width:220px;
-    background-image: url("/images/Photo.JPG");
+    width:200px;
+    background-image: url("/images/profile1.jpg");
     background-size:cover;
-    border-radius: 50%;
+    border-radius: 20%;
     border: 1px solid black;
 
 }
@@ -55,6 +59,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 5px 5px 50px 5px;
     /* to align along the main axis we use justify content */
 }
 
@@ -153,7 +158,7 @@ li{
     justify-content: space-evenly;
 }
 
-#name,#email{
+#name{
     margin-top: 20px;
     height: 35px;
     width: 300px;
@@ -236,13 +241,14 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: -20px;
 }
 
 .education_details{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 0px;
+    margin-top: -30px;
 }
 
 #education{
