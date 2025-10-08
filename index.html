@@ -11,8 +11,7 @@
     <div id="main">
         <div id="profile">
             <div id="image">
-                <div id="pic">
-                </div>
+                <img id="profile_pic" src="images/profile1.jpg" alt="">
                 <div id="details">
                     <p>Tharun</p>
                 </div>
@@ -46,10 +45,10 @@
 
         <div id="content">
             <div id="nav_bar">
-            <a  onclick="show('about')" >About</a>
-            <a onclick="show('resume')">Resume</a>
-            <a onclick="show('achievements')">Achievements</a>
-            <a  onclick="show('contact-me')" >Contact me</a>
+            <a  id="1" class="nav_class active_tab" onclick="show('about','1')" >About</a>
+            <a  id="2" class="nav_class" onclick="show('resume','2')">Resume</a>
+            <a  id="3" class="nav_class" onclick="show('achievements','3')">Achievements</a>
+            <a  id="4" class="nav_class" onclick="show('contact-me','4')" >Contact me</a>
             </div>
 
             <div class="section active heading" id="about">
@@ -65,13 +64,12 @@
                     <img src="images/html.png" alt="">
                     <img src="images/css.png" alt="">
                     <img src="images/postgres.png" alt="">
-                    <img src="images/spring.jpg" alt="">
+                    <img src="images/springboot.png" alt="">
+                    <img src="images/github.png" alt="">
+                    <img src="images/python.png" alt="">
+                    <img src="images/cpp.png" alt="">
+                    <img src="images/kafka.png" alt="">
                </div>
-               <a id="resume_button" href="https://drive.google.com/file/d/1rIJez_jVCVE8MmNXf-NEiHShh2sAEVSQ/view?usp=sharing" target="_blank">
-                    <button class="btn">
-                        <i class="fa fa-download"></i>
-                        Resume
-                    </button>
                 </a>
             </div>
 
@@ -217,12 +215,17 @@ authentication
                     <input id="email" type="textarea" placeholder="Email">
                 </div>
 
-                <div class="messagediv">
+                <div id="messagediv">
                     <form action="">
                         <input id="message" type="textarea" placeholder="Type your message">
                     </form>
                 </div>
-               
+
+                <div id="button_submit">
+                    <button onclick="submit()"> Submit </button>
+                </div>
+
+
             </div>
 
         </div>
@@ -230,13 +233,30 @@ authentication
     </div>
 
     <script>
-        function show(id){
+        function show(id,id1){
             var section = document.getElementsByClassName("section");
             for(var i=0;i<section.length;i++){
                 section[i].classList.remove('active');
             }
             document.getElementById(id).classList.add('active');
+
+            var navsection = document.getElementsByClassName("nav_class");
+            for(var i=0;i<navsection.length;i++){
+                navsection[i].classList.remove('active_tab');
+            }
+            document.getElementById(id1).classList.add('active_tab');
+
         }
+
+        function submit(id){
+            const inputs = document.querySelectorAll('#contactdiv input')
+            inputs.forEach(input=>input.value='');
+
+            const inputs2 = document.querySelectorAll('#messagediv input')
+            inputs2.forEach(input=>input.value='');
+        }
+
+
     </script>
 
 </body>

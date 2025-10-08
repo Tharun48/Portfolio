@@ -8,8 +8,15 @@
     background-color: rgba(41, 35, 35, 0.897);
 }
 
+#profile_pic{
+    margin: 10px;
+    width:90%;
+    height:50vh;
+    border-radius: 10%;
+}
+
 p{
-    font-size: 23px;
+    font-size: 20px;
 }
 
 #content{
@@ -24,14 +31,18 @@ p{
     justify-content: space-around;
 }
 
+image{
+    width: 90%;
+}
 
 
 #pic{
+    margin-top: 2vh;
     height: 300px;
-    width:200px;
+    width:80%;
     background-image: url("/images/profile1.jpg");
     background-size:cover;
-    border-radius: 20%;
+    border-radius: 10%;
     border: 1px solid black;
 
 }
@@ -44,22 +55,35 @@ p{
     /* justify-content: flex-start; */
 }
 
+#id1{
+    border: 2px solid red;
+}
+
+.active_tab{
+    background-color: aqua;
+    border-radius: 4%;
+    color: white;
+    background-color: rgb(109, 104, 104);
+}
+
 .social{
-    height: 50px;
-    width: 300px;
     /* border: 1px dashed green; */
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 18px;
+    word-break: break-all;       /* ✅ breaks long words anywhere if needed */
+    overflow-wrap: break-word;   /* ✅ breaks URLs/emails nicely */
+    white-space: normal;         /* ✅ ensures it can wrap to the next line */
 }
 
 #contact{
-    margin-top: 20px;
+    margin-top: -10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 5px 5px 50px 5px;
+    width: 90%;
     /* to align along the main axis we use justify content */
 }
 
@@ -164,7 +188,11 @@ li{
     width: 300px;
 }
 
-.messagediv{
+#email{
+    margin-top: 20px;
+}
+
+#messagediv{
     display: flex;
     flex-direction: row;
     margin-top: 20px;
@@ -224,12 +252,12 @@ img{
 }
 
 #skills{
-    margin-top: 30px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 60px;
 }
 
 #skills img{
@@ -255,4 +283,19 @@ img{
     display:flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#button_submit{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+#button{
+    position: relative;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 30px;
 }
