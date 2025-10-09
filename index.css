@@ -9,7 +9,8 @@
 }
 
 #profile_pic{
-    margin: 10px;
+    margin: 5%;
+    margin-top: 10%;
     width:90%;
     height:50vh;
     border-radius: 10%;
@@ -31,8 +32,10 @@ p{
     justify-content: space-around;
 }
 
-image{
+#image{
     width: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -52,6 +55,7 @@ image{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
     /* justify-content: flex-start; */
 }
 
@@ -87,9 +91,6 @@ image{
     /* to align along the main axis we use justify content */
 }
 
-#logo{
-    font-size: 30px;
-}
 
 .social div{
     margin: 0px;
@@ -97,14 +98,15 @@ image{
 
 a{
     text-decoration: none;
-    color: white;
 }
 
 #nav_bar{
-    margin-top: 10px;
-    margin-left: 150px;
+    margin-top: 2%;
+    margin-left: 20%;
+    width: 80%;
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     font-size: 24px;
 }
@@ -131,7 +133,7 @@ a :hover{
 
 .heading{
     margin-top: 40px;
-    font-size: 20px;
+    /* font-size: 20px; */
     color: orange;
     line-height: 22px;
     margin: 20px;
@@ -151,6 +153,7 @@ li{
 
 .section{
     display: none;
+    width: 90%;
 }
 
 .active{
@@ -182,17 +185,23 @@ li{
     justify-content: space-evenly;
 }
 
+#contact_me{
+    width: 90%;
+}
+
 #name{
     margin-top: 20px;
     height: 35px;
-    width: 300px;
+    width: 30%;
 }
 
 #email{
+    width: 50%;
     margin-top: 20px;
 }
 
 #messagediv{
+    border:1px solid red;
     display: flex;
     flex-direction: row;
     margin-top: 20px;
@@ -202,17 +211,10 @@ li{
 #message{
     margin-top: 20px;
     height: 70px;
-    width: 600px;
 }
 
 p{
     display: inline;
-}
-
-#contact_me{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 
@@ -225,19 +227,14 @@ p{
     color: rgb(103, 66, 189);
 }
 
-#expensetag{
-    color: rgb(103, 66, 189);
-}
-
-.achievement_li{
-    margin-top: 10px;
-}
 
 #coding_profile_link{
     margin-top: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 img{
@@ -298,4 +295,32 @@ img{
     margin-top: 100px;
     margin-left: 100px;
     font-size: 30px;
+}
+
+p{
+    font-size: 18px;
+}
+
+.li{
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+
+@media(max-width: 600px){
+    p{
+        font-size: 14px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    #nav_bar{
+        font-size: 20px;
+    }
+
+    .li{
+        font-size: 1rem;
+    }
+
+    
 }
