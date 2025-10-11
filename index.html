@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -28,13 +29,13 @@
                 </div>
                 <div class="social" id="linkedIn">
                     <p>
-                    <a href="https://www.linkedin.com/in/tharun48/" target="_blank"><i class="fa fa-linkedin-square"></i></a> 
+                    <a href="https://www.linkedin.com/in/tharun48/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
                     </p>
                     <p>linkedin.com/in/tharun48</p>
                 </div>
                 <div class="social" id="github">
                     <p>
-                    <a href="https://github.com/Tharun48" target="_blank"><i class="fa fa-github"></i></a> 
+                    <a href="https://github.com/Tharun48" target="_blank"><i class="fa-brands fa-github"></i></a> 
                     </p>
                     <p>github.com/tharun48</p>
                 </div>
@@ -74,7 +75,10 @@
             </div>
 
             <div class="section heading" id="resume">
-                <h3>Experience</h3>
+                <div id="resume_container">
+                    <h3 style="display: inline;">Experience</h3>
+                    <p id="resume_btn"><button><i class="fa-solid fa-download"></i><a href="https://drive.google.com/file/d/19vKAAGVa4PL60zqUUAgeIvQTdz7qDi3F/view" target="_blank">Resume</a></button></p>
+                </div>
                 <ul>
                     <div class="title">
                         <h3 style="color: rgb(103, 66, 189); display: inline;" >Global Banking Product</h3>
@@ -99,13 +103,13 @@
                 <ul>
                     <div class="title">
                         <h3 style="display: inline;" >
-                            <a href="http://expense-tracker-env-1.eba-b2mhpunf.eu-north-1.elasticbeanstalk.com/swagger-ui/index.html" target="_blank">Expense-Tracker </a> 
-                            <a href="https://github.com/Tharun48/ExpenseTracker" target="_blank"><i class="fa fa-github"></i></a>
+                            <a href="http://expense-tracker-env-1.eba-b2mhpunf.eu-north-1.elasticbeanstalk.com/swagger-ui/index.html" target="_blank">Expense-Tracker <i class="fa-brands fa-github"></i> </a> 
+                            <!-- <a href="https://github.com/Tharun48/ExpenseTracker" target="_blank"><i class="fa-brands fa-github"></i></a> -->
                         </h3>
                         <p>Mar 2025 - May 2025</p>
                     </div>
                     <p>
-                        <ul>
+                        <ul class="li">
                             <li>Built a secure and scalable backend system to track and analyze users’ monthly expenses using Spring
 Boot, deployed on AWS Elastic Beanstalk.
                             </li>
@@ -123,12 +127,13 @@ authentication
                 <ul>
                     <div class="title">
                         <h3 style="display: inline;" >
-                            <a href="https://github.com/Tharun48/FinAxis" target="_blank">FinAxis <i class="fa fa-github"></i></a>
+                            <a href="https://github.com/Tharun48/FinAxis" target="_blank">FinAxis <i class="fa-brands fa-github"></i></a>
+                            <!-- <a href="https://github.com/Tharun48/FinAxis" target="_blank"><i class="fa-brands fa-github"></i></a> -->
                         </h3>
                         <p>Jun 2025 - Aug 2025</p>
                     </div>
                     <p>
-                        <ul>
+                        <ul class="li">
                             <li>Built a financial platform using microservices to manage customer accounts and card data with a
  modular, scalable architecture.</li>
                             <li>Enabled asynchronous communication between services (e.g., account → card) using Apache Kafka
@@ -153,44 +158,6 @@ authentication
                 </div>
             </div>
 
-
-            <div class="section heading" id="project">
-                <h3>Projects</h3>
-                <ul>
-                    <h3 class="tag"> <a id="expensetag" href="http://expense-tracker-env-1.eba-b2mhpunf.eu-north-1.elasticbeanstalk.com/swagger-ui/index.html" target="_blank">Expense-Tracker</a>  </h3>
-                    <!-- <h3 class="tag">Expense-Tracker (<a style="color: rgb(164, 164, 179);" "http://expense-tracker-env-1.eba-b2mhpunf.eu-north-1.elasticbeanstalk.com/swagger-ui/index.html" target="_blank">live</a>)</h3> -->
-                    <p>
-                        <ul>
-                            <li>Built a secure and scalable backend system to track and analyze users’ monthly expenses using Spring
-Boot, deployed on AWS Elastic Beanstalk.
-                            </li>
-                            <li>
-                                Integrated PostgreSQL database with JPA/Hibernate, ensuring efficient persistence of user and
-transaction data.
-                            </li>
-                            <li>
-                                Secured the application using Spring Security with Bcrypt password hashing and JWT-based token
-authentication
-                            </li>
-                        </ul>
-                    </p>
-                </ul>
-                <ul>
-                    <h3 class="tag">Finaxis</h3>
-                    <p>
-                        <ul>
-                            <li>Built a financial platform using microservices to manage customer accounts and card data with a
- modular, scalable architecture.</li>
-                            <li>Enabled asynchronous communication between services (e.g., account → card) using Apache Kafka
- and Spring Cloud Stream.</li>
-                            <li>Configured Kafka producers and consumers via YAML for dynamic routing and topic binding; established a
- message-driven architecture with isolated consumer groups and multi-topic support.</li>
-                            <li>Integrated PostgreSQL for data persistence and set up Spring JPA for seamless object-relational
- mapping.</li>
-                        </ul>
-                    </p>
-                </ul>
-            </div>
 
              <div class="section heading" id="achievements">
                 <div id="achievement_summary">
