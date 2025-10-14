@@ -10,55 +10,29 @@
 </head>
 <body>
     <div id="main">
-        <div id="profile">
-            <div id="image">
-                <img id="profile_pic" src="images/profile1.jpg" alt="">
-                <div id="details">
-                    <h3>Tharun</h3>
-                </div>
-            </div>
-
-            <div id="contact">
-                <div class="social" id="email_id">
-                    <p>&#128386;</p>
-                    <p>tharunreddyy48@gmail.com</p>
-                </div>
-                <div class="social" id="mobile">
-                    <p>&#128379;</p>
-                    <p>+91 7036481847</p>
-                </div>
-                <div class="social" id="linkedIn">
-                    <p>
-                    <a href="https://www.linkedin.com/in/tharun48/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
-                    </p>
-                    <p>linkedin.com/in/tharun48</p>
-                </div>
-                <div class="social" id="github">
-                    <p>
-                    <a href="https://github.com/Tharun48" target="_blank"><i class="fa-brands fa-github"></i></a> 
-                    </p>
-                    <p>github.com/tharun48</p>
-                </div>
-            </div>
-
-
-        </div>
 
         <div id="content">
             <div id="nav_bar">
-            <a  id="1" class="nav_class active_tab" onclick="show('about','1')" >About</a>
-            <a  id="2" class="nav_class" onclick="show('resume','2')">Resume</a>
-            <a  id="3" class="nav_class" onclick="show('achievements','3')">Achievements</a>
-            <!-- <a  id="4" class="nav_class" onclick="show('contact_me','4')" >Contact me</a> -->
+                <a  href="#about" class="nav_class active_tab" onclick="show('about','1')" >About</a>
+                <a  href="#resume" class="nav_class" onclick="show('resume','2')">Resume</a>
+                <a  href="#achievements" class="nav_class" onclick="show('achievements','3')">Achievements</a>
+                <a  href="#contact_me" class="nav_class" onclick="show('contact_me','4')" >Contact me</a>
             </div>
 
-            <div class="section active heading" id="about">
+            <div class="section heading" id="about">
                 <h3>About</h3>
-               <p>
-               I am Tharun, a Software developer passionate about problem solving and building things which makes the changes in the real world. I enjoy exploring the innovative algorithms, which makes our tasks easy in our day-to-day life.
-                <br> <br>
-                Overtime I developed my skills by solving numerous DSA problems across various coding platforms and contributing to open-source communities.
-               </p>
+                <div id="summary">
+                    <div id="intro">
+                        <p>
+                        I am Tharun, a Software developer passionate about problem solving and building things which makes the changes in the real world. I enjoy exploring the innovative algorithms, which makes our tasks easy in our day-to-day life.
+                         <br> <br>
+                         Overtime I developed my skills by solving numerous DSA problems across various coding platforms and contributing to open-source communities.
+                        </p>
+                    </div>
+                    <div id="image">
+                        <img id="profile_pic" src="images/image1.jpg" alt="">
+                    </div>
+                </div>
                <h3>Skills</h3>
                <div id="skills">
                     <img src="images/java.png" alt="">
@@ -71,7 +45,6 @@
                     <img src="images/cpp.png" alt="">
                     <img src="images/kafka.png" alt="">
                </div>
-                </a>
             </div>
 
             <div class="section heading" id="resume">
@@ -86,41 +59,26 @@
                     </div>
                     <p>
                         <ul class="li">
-                            <li>Developed 3+ domain-specific microservices to improve modularity and scalability, optimized DB
- configurations for performance, and integrated CI/CD pipelines using Jenkins for seamless deployment.
-                            </li>
-                            <li>
-                                Exposed 25+ REST APIs and documented them using Swagger; wrote 200+ unit tests to ensure code
- reliability.
-                            </li>
-                            <li>
-                               Achieved a 30% system performance boost by optimizing queries and reducing memory footprint.
-                            </li>
+                            <li>Developed 3+ domain-specific microservices to improve modularity and scalability, optimized DB configurations for performance, and integrated CI/CD pipelines using Jenkins for seamless deployment.</li>
+                            <li> Exposed 25+ REST APIs and documented them using Swagger; wrote 200+ unit tests to ensure code reliability.</li>
+                            <li> Achieved a 30% system performance boost by optimizing queries and reducing memory footprint. </li>
                         </ul>
                     </p>
                 </ul>
+
                 <h3>Project</h3>
                 <ul>
                     <div class="title">
                         <h3 style="display: inline;" >
                             <a href="http://expense-tracker-env-1.eba-b2mhpunf.eu-north-1.elasticbeanstalk.com/swagger-ui/index.html" target="_blank">Expense-Tracker <i class="fa-brands fa-github"></i> </a> 
-                            <!-- <a href="https://github.com/Tharun48/ExpenseTracker" target="_blank"><i class="fa-brands fa-github"></i></a> -->
                         </h3>
                         <p>Mar 2025 - May 2025</p>
                     </div>
                     <p>
                         <ul class="li">
-                            <li>Built a secure and scalable backend system to track and analyze users’ monthly expenses using Spring
-Boot, deployed on AWS Elastic Beanstalk.
-                            </li>
-                            <li>
-                                Integrated PostgreSQL database with JPA/Hibernate, ensuring efficient persistence of user and
-transaction data.
-                            </li>
-                            <li>
-                                Secured the application using Spring Security with Bcrypt password hashing and JWT-based token
-authentication
-                            </li>
+                            <li>Built a secure and scalable backend system to track and analyze users’ monthly expenses using Spring Boot, deployed on AWS Elastic Beanstalk.</li>
+                            <li> Integrated PostgreSQL database with JPA/Hibernate, ensuring efficient persistence of user and transaction data. </li>
+                            <li> Secured the application using Spring Security with Bcrypt password hashing and JWT-based token authentication </li>
                         </ul>
                     </p>
                 </ul>
@@ -128,20 +86,15 @@ authentication
                     <div class="title">
                         <h3 style="display: inline;" >
                             <a href="https://github.com/Tharun48/FinAxis" target="_blank">FinAxis <i class="fa-brands fa-github"></i></a>
-                            <!-- <a href="https://github.com/Tharun48/FinAxis" target="_blank"><i class="fa-brands fa-github"></i></a> -->
                         </h3>
                         <p>Jun 2025 - Aug 2025</p>
                     </div>
                     <p>
                         <ul class="li">
-                            <li>Built a financial platform using microservices to manage customer accounts and card data with a
- modular, scalable architecture.</li>
-                            <li>Enabled asynchronous communication between services (e.g., account → card) using Apache Kafka
- and Spring Cloud Stream.</li>
-                            <li>Configured Kafka producers and consumers via YAML for dynamic routing and topic binding; established a
- message-driven architecture with isolated consumer groups and multi-topic support.</li>
-                            <li>Integrated PostgreSQL for data persistence and set up Spring JPA for seamless object-relational
- mapping.</li>
+                            <li>Built a financial platform using microservices to manage customer accounts and card data with a modular, scalable architecture.</li>
+                            <li>Enabled asynchronous communication between services (e.g., account → card) using Apache Kafka and Spring Cloud Stream.</li>
+                            <li>Configured Kafka producers and consumers via YAML for dynamic routing and topic binding; established a message-driven architecture with isolated consumer groups and multi-topic support.</li>
+                            <li>Integrated PostgreSQL for data persistence and set up Spring JPA for seamless object-relational mapping.</li>
                         </ul>
                     </p>
                 </ul>
@@ -159,7 +112,7 @@ authentication
             </div>
 
 
-             <div class="section heading" id="achievements">
+            <div class="section heading" id="achievements">
                 <div id="achievement_summary">
                     <h3>Achievements</h3>
                     <ul>
@@ -181,23 +134,53 @@ authentication
                 </div>
             </div>
 
-            <!-- <div class="section heading" id="contact_me">
-                <h3>Contact me</h3>
-                <div id="contactdiv">
-                    <input id="name" type="textarea" placeholder="Name">
-                    <input id="email" type="textarea" placeholder="Email">
+            <div class="section heading" id="achievements">
+                <div id="achievement_summary">
+                    <h3>Achievements</h3>
+                    <ul>
+                        <li class="li">Achieved the Knight badge on LeetCode with a max rating of 1937, ranking among the top 3% of coders</li>
+                        <li class="li">Ranked 956 out of 30K participants in Leetcode Weekly Contest 456</li>
+                        <li class="li">Achieved a Global Rank of 342 in Codeforces Starter 172.</li>
+                        <li class="li">Ranked 71, 75 and 77 in GeeksforGeeks weekly contest</li>
+                        <li class="li">Pupil at Codeforces (max-rating:1207)</li>
+                        <li class="li">3* at Codechef (max-rating:1606)</li>
+                    </ul>
                 </div>
+                <h3>Coding Profile Links</h3>
+                <div id="coding_profile_link">
+                    <a href="https://leetcode.com/u/Tharun_Kumar_Reddy/" target="_blank">           <img src="/images/leetcode.png" alt=""></a>
+                    <a href="https://codeforces.com/profile/Tharun_Reddy_" target="_blank">         <img src="/images/codeforces" alt=""></a>
+                    <a href="https://www.codechef.com/users/tharunreddy48" target="_blank">         <img src="/images/codechef.jpg" alt=""></a>
+                    <a href="https://www.geeksforgeeks.org/user/tharunreddyy48/" target="_blank">   <img src="/images/gfg.png" alt=""></a>
+                    <a href="https://codolio.com/profile/TharunReddy" target="_blank">   <img src="/images/codolio.png" alt=""></a>
+                </div>
+            </div>
 
-                <div id="messagediv">
-                    <form action="">
-                        <input id="message" type="textarea" placeholder="Type your message">
-                    </form>
-                </div>
 
-                <div id="button_submit">
-                    <button onclick="submit()"> Submit </button>
+            
+
+            <div class="section heading" id="contact_me">
+                <h3>Connect With Me</h3>
+                <div id="fill_form">
+                    <div id="message">
+                        <div id="contact_message">
+                            <h4>I Would Like To Hear From You!</h4>
+                            <p>If you have any queries, Let me know</p>
+                        </div>
+                        <div id="contact_form">
+                            <form action="contactform.js" id="query_form">
+                                <input id="name" type="text" placeholder="Name">
+                                <input id="email" type="text" placeholder="Email">
+                                <input id="msg" type="text" placeholder="Message">
+                                <button>Submit</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div> -->
+                <div id="social_links">
+
+                </div>
+            </div>
 
         </div>
 
