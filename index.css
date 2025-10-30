@@ -36,20 +36,26 @@ p{
 #content{
     background-color: rgba(41, 35, 35, 0.897);
     width: 85%;
-    border-radius: 5%;
+    margin: 20px;
+    border-radius: 5vw;
+    padding: 2vw;
 }
 
 #main{
     margin: 2vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 #image{
     width: 90%;
     display: flex;
+    margin-left: 8vw;
     flex-direction: column;
+    border-radius: 3vw;
 }
 
 
