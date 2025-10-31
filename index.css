@@ -12,6 +12,10 @@ body{
     background-color: rgba(41, 35, 35, 0.897);
 }
 
+.section{
+    scroll-margin-top: 100px;
+}
+
 #profile_pic{
     height: 30vh;
     width: 15vw;
@@ -36,9 +40,9 @@ p{
 #content{
     background-color: rgba(41, 35, 35, 0.897);
     width: 85%;
-    margin: 20px;
+    margin: 2%;
     border-radius: 5vw;
-    padding: 2vw;
+    padding: 1vw;
 }
 
 #main{
@@ -121,7 +125,7 @@ a{
 }
 
 #nav_bar{
-    margin-top: 2%;
+    margin-top: 1%;
     margin-left: 20%;
     width: 80%;
     display:flex;
@@ -129,6 +133,10 @@ a{
     flex-wrap: wrap;
     justify-content: space-around;
     font-size: 24px;
+    top:10px;
+    z-index: 1000;
+    color: black;
+    /* background-color: orange; */
 }
 
 #nav_bar :hover{
@@ -419,6 +427,23 @@ p{
     align-items: center;
     margin-top: -20px;
     /* border: 2px solid red; */
+}
+
+.socio{
+    display: flex;
+    /* border: 1px solid yellow; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#social_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1vw;
 }
 
 @media(max-width:600px){
